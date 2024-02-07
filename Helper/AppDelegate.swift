@@ -6,15 +6,15 @@
 //
 
 import Cocoa
+import AppKit
 
-@main
 class AppDelegate: NSObject, NSApplicationDelegate {
 
-    
-
+    let hotKeyHandler = HotkeyHandler()
+    let statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
-        // Insert code here to initialize your application
+        self.setupStatusItemButton()
     }
 
     func applicationWillTerminate(_ aNotification: Notification) {
@@ -24,7 +24,11 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     func applicationSupportsSecureRestorableState(_ app: NSApplication) -> Bool {
         return true
     }
-
-
+    
+    private func setupStatusItemButton() {
+        if let button = self.statusItem.button {
+            button.image = .statusBarItem
+        }
+    }
 }
 

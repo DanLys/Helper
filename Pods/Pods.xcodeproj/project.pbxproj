@@ -1,0 +1,896 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		079C57B9DE25C63B3255AF60FBD2DC5E /* NSEventModifierFlags+HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E91D02F6A64AEB66D24B374EAA458FA /* NSEventModifierFlags+HotKey.swift */; };
+		0BDD0F7D8A3FA96A9B1E443A7F3F643A /* _UnsafeWrappedBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04540808C2DCA545D47E1B6FFF4A9D2 /* _UnsafeWrappedBuffer.swift */; };
+		0F08AB8AB63851A73C37B3FFF4479AE1 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */; };
+		11999D37F3F34038ECDC29999094F703 /* DequeModule.docc in Sources */ = {isa = PBXBuildFile; fileRef = 2FD60134A51B103D95EEC2F5450DE20F /* DequeModule.docc */; };
+		1384363EFB949241A0473355CE0F30DE /* _DequeSlot.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE37E25B42F3AD84E2A16CFB349AD8EB /* _DequeSlot.swift */; };
+		14818B5B862D53C4DD7B78DC8D91A63E /* Deque.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD35528087253A27B53B4FECE6B868B /* Deque.swift */; };
+		21A5719304E3536B2A22C6CE0A30C983 /* Deque+Testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBAD5291534FB041F3FB301DD41214A /* Deque+Testing.swift */; };
+		229C44124E34B78E141F0711D55FE424 /* UnsafeMutableBufferPointer+Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEEC94A655335F2141B708C642CAD6A4 /* UnsafeMutableBufferPointer+Utilities.swift */; };
+		41802DA558C24B6884ED4A09EDFDC08C /* Deque+CustomStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7B97670DE02FCEF1C27C613128758B6 /* Deque+CustomStringConvertible.swift */; };
+		41C588D399DF7C5CF7ED6B495E69F692 /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */; };
+		494DFD43467B5E4116E6B34AEC0EBFA1 /* Deque._Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC5E4039BD9D2B01D8A4BE233DFEC669 /* Deque._Storage.swift */; };
+		4A4CC0B26D24E8097D9A9F9AB03EB0EC /* Compatibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F9CB65666159F7D2E0D909F8D5C8573 /* Compatibility.swift */; };
+		4D75EB22F0E01020261266136F28F231 /* HotKey-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D32C1D34DA3464B4F71E94A9DFAD15 /* HotKey-dummy.m */; };
+		5143AF249AE80A9913639D8F4E81C408 /* _DequeBuffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0275E88AF8C17B144719ED4D8BB54F4E /* _DequeBuffer.swift */; };
+		54416E45059E6B88716CB7EF68C55F1A /* Pods-Helper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B2445D95C396A63EA76C7F0C03ABF0E9 /* Pods-Helper-dummy.m */; };
+		55DC15800A20058497693C02B6F45EBD /* Deque._UnsafeHandle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9FAEFE1DF75B244994DFF29096F15A /* Deque._UnsafeHandle.swift */; };
+		631C8D9C27B4B8D80C4AFB60298B533D /* Deque+Collection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4456599E9341C72059594F3D6560F59 /* Deque+Collection.swift */; };
+		71E4BD902A1109392C43A38F076105B9 /* _DequeBufferHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876A076DA514C0703D7F89DF6980832E /* _DequeBufferHeader.swift */; };
+		793125C058F7C3E22A30A39AF80CF5E5 /* HotKeysController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A15A07FBDD3983A4B84A6DADEE5C76F /* HotKeysController.swift */; };
+		7DE7A644BDB044F2508790BECD629DE0 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */; };
+		7F32AE73A3816FE774036288C81B1866 /* Deque+Equatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D29938A529E50B2E026CDFE8DF0F9EF /* Deque+Equatable.swift */; };
+		8225E4A1869ECFE41D2C9A93A8CFA63B /* DequeModule-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4F2C21AF91A3BFE300DAEDE889047FC /* DequeModule-dummy.m */; };
+		8DB1B75BF35671F8DCBCFFEE7BB0C1AE /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */; };
+		ADDF2C327E338FE36D3E1A3BC1CF705A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */; };
+		B87571960E297EE1519D2BCE5A752A96 /* Pods-Helper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32D880469158C5E1FBDC2FE0223872EE /* Pods-Helper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B8D30D6ED8EBE901B6B125B571CBE21D /* HotKey-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF89417808EAC1FEE5EFE45C973F221C /* HotKey-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BD2F2F6790B1097BD9932DAD76532E43 /* HotKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0F6B8D44906AB9EA3B142B3814328 /* HotKey.swift */; };
+		C4079F5189051890CE3743482E03DECC /* Deque+ExpressibleByArrayLiteral.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B099A3CED11AE9FFFF7F55972644265 /* Deque+ExpressibleByArrayLiteral.swift */; };
+		D5C477FEB8B0A3BFE77300E23E2FCCF6 /* Deque+Hashable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5524759BED5E8E16291E6ED5321BA1BF /* Deque+Hashable.swift */; };
+		D6ECE6FDC2393DA92343EE062A38638A /* Deque+CustomReflectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01D8067E3BA490F1DC7C2C61C21D42CA /* Deque+CustomReflectable.swift */; };
+		D9D58C6A3D46C786319DF6026A2FD2A5 /* KeyCombo+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACB71E5E5908A942053C9D455DDD9856 /* KeyCombo+System.swift */; };
+		DC09E914168D9EDBBD25882C82613C8A /* Deque+CustomDebugStringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C7A801EF3EDDB750C58577D6A98FDE /* Deque+CustomDebugStringConvertible.swift */; };
+		DC3C51DF7E16D0AED233A93CA0220290 /* Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60107FC329A76E362D1FFB4FF2ADA444 /* Key.swift */; };
+		E693C42A8D760AB0F139D18B50DEEFC4 /* KeyCombo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2395FB559879081A54C7E4F5B210C210 /* KeyCombo.swift */; };
+		ECA29ED2E2C10689EDD9FF3E68173FF9 /* Deque+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = A73408AA2E15EDE63CACCE0B78A33BE8 /* Deque+Extras.swift */; };
+		F054168A43FFC243ADDB1C3209F4747F /* Deque+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DBC9B71EA36BA7DFB67271052B479C /* Deque+Codable.swift */; };
+		F4DE070F0F40001DF064337F30ADF658 /* DequeModule-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CB9B2F33B1A53453D02D5AA6E2C59950 /* DequeModule-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		059BF6FCA435129F40F45A25EBF13805 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB4D977E4336D9F2E9E510A33CD1DB6D;
+			remoteInfo = HotKey;
+		};
+		2E6717E6BBF24099EBCA79A9CCE7BC9F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CE07C2F3ABE51E71FE07FF1DE53C5030;
+			remoteInfo = DequeModule;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01D8067E3BA490F1DC7C2C61C21D42CA /* Deque+CustomReflectable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+CustomReflectable.swift"; path = "Sources/DequeModule/Deque+CustomReflectable.swift"; sourceTree = "<group>"; };
+		0275E88AF8C17B144719ED4D8BB54F4E /* _DequeBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _DequeBuffer.swift; path = Sources/DequeModule/_DequeBuffer.swift; sourceTree = "<group>"; };
+		1158D6D210D587695B3D70CDF563A1E2 /* DequeModule-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DequeModule-prefix.pch"; sourceTree = "<group>"; };
+		1A15A07FBDD3983A4B84A6DADEE5C76F /* HotKeysController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKeysController.swift; path = Sources/HotKey/HotKeysController.swift; sourceTree = "<group>"; };
+		1C50611070225985A6E0EE9C1CAC6640 /* Pods-Helper-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Helper-Info.plist"; sourceTree = "<group>"; };
+		1C90B946B3063215B68185FDB3EA5C8E /* Pods-Helper.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Helper.release.xcconfig"; sourceTree = "<group>"; };
+		1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		21E0F6B8D44906AB9EA3B142B3814328 /* HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HotKey.swift; path = Sources/HotKey/HotKey.swift; sourceTree = "<group>"; };
+		2395FB559879081A54C7E4F5B210C210 /* KeyCombo.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = KeyCombo.swift; path = Sources/HotKey/KeyCombo.swift; sourceTree = "<group>"; };
+		2DC1A65D2CA2ED33460948770A9F4B42 /* Pods-Helper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Helper.modulemap"; sourceTree = "<group>"; };
+		2FD60134A51B103D95EEC2F5450DE20F /* DequeModule.docc */ = {isa = PBXFileReference; includeInIndex = 1; name = DequeModule.docc; path = Sources/DequeModule/DequeModule.docc; sourceTree = "<group>"; };
+		30DF8DBC825299B9A8A0CA768724880C /* Pods-Helper */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-Helper"; path = Pods_Helper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32D880469158C5E1FBDC2FE0223872EE /* Pods-Helper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Helper-umbrella.h"; sourceTree = "<group>"; };
+		4D29938A529E50B2E026CDFE8DF0F9EF /* Deque+Equatable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Equatable.swift"; path = "Sources/DequeModule/Deque+Equatable.swift"; sourceTree = "<group>"; };
+		4E91D02F6A64AEB66D24B374EAA458FA /* NSEventModifierFlags+HotKey.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSEventModifierFlags+HotKey.swift"; path = "Sources/HotKey/NSEventModifierFlags+HotKey.swift"; sourceTree = "<group>"; };
+		4F9CB65666159F7D2E0D909F8D5C8573 /* Compatibility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Compatibility.swift; path = Sources/DequeModule/Compatibility.swift; sourceTree = "<group>"; };
+		5524759BED5E8E16291E6ED5321BA1BF /* Deque+Hashable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Hashable.swift"; path = "Sources/DequeModule/Deque+Hashable.swift"; sourceTree = "<group>"; };
+		56D7A5E836956D04EBA295957383DD64 /* DequeModule.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DequeModule.release.xcconfig; sourceTree = "<group>"; };
+		57FB0985560B80B02B54AA4A54C9FF97 /* HotKey-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-prefix.pch"; sourceTree = "<group>"; };
+		5BBA1AC46A9FA24B548A663BB063A710 /* HotKey.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HotKey.modulemap; sourceTree = "<group>"; };
+		5DC67414C47853C99D91A6F2339702DC /* DequeModule */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DequeModule; path = DequeModule.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		60107FC329A76E362D1FFB4FF2ADA444 /* Key.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Key.swift; path = Sources/HotKey/Key.swift; sourceTree = "<group>"; };
+		61D32C1D34DA3464B4F71E94A9DFAD15 /* HotKey-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HotKey-dummy.m"; sourceTree = "<group>"; };
+		743C298F29144C5EB6ED37B119054244 /* DequeModule-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DequeModule-Info.plist"; sourceTree = "<group>"; };
+		78C11218D77378387A6389016FCC0565 /* HotKey-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HotKey-Info.plist"; sourceTree = "<group>"; };
+		7F94458A7CCC9097223048BCBB838856 /* HotKey.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HotKey.release.xcconfig; sourceTree = "<group>"; };
+		876A076DA514C0703D7F89DF6980832E /* _DequeBufferHeader.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _DequeBufferHeader.swift; path = Sources/DequeModule/_DequeBufferHeader.swift; sourceTree = "<group>"; };
+		8B099A3CED11AE9FFFF7F55972644265 /* Deque+ExpressibleByArrayLiteral.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+ExpressibleByArrayLiteral.swift"; path = "Sources/DequeModule/Deque+ExpressibleByArrayLiteral.swift"; sourceTree = "<group>"; };
+		8C08B10C19A57249A7EF28B27DB833CD /* Pods-Helper-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Helper-acknowledgements.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9EE8857A721A3FAA103342E283BD5F04 /* HotKey.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HotKey.debug.xcconfig; sourceTree = "<group>"; };
+		A04540808C2DCA545D47E1B6FFF4A9D2 /* _UnsafeWrappedBuffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _UnsafeWrappedBuffer.swift; path = Sources/DequeModule/_UnsafeWrappedBuffer.swift; sourceTree = "<group>"; };
+		A4456599E9341C72059594F3D6560F59 /* Deque+Collection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Collection.swift"; path = "Sources/DequeModule/Deque+Collection.swift"; sourceTree = "<group>"; };
+		A73408AA2E15EDE63CACCE0B78A33BE8 /* Deque+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Extras.swift"; path = "Sources/DequeModule/Deque+Extras.swift"; sourceTree = "<group>"; };
+		A98A904FCEAF3AAF2345B0B050FFB621 /* Pods-Helper.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Helper.debug.xcconfig"; sourceTree = "<group>"; };
+		AC5E4039BD9D2B01D8A4BE233DFEC669 /* Deque._Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deque._Storage.swift; path = Sources/DequeModule/Deque._Storage.swift; sourceTree = "<group>"; };
+		ACB71E5E5908A942053C9D455DDD9856 /* KeyCombo+System.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "KeyCombo+System.swift"; path = "Sources/HotKey/KeyCombo+System.swift"; sourceTree = "<group>"; };
+		B2445D95C396A63EA76C7F0C03ABF0E9 /* Pods-Helper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Helper-dummy.m"; sourceTree = "<group>"; };
+		B3C5DB7DD78DB44EB9CCA310252D5938 /* Pods-Helper-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-Helper-frameworks.sh"; sourceTree = "<group>"; };
+		B4C7A801EF3EDDB750C58577D6A98FDE /* Deque+CustomDebugStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+CustomDebugStringConvertible.swift"; path = "Sources/DequeModule/Deque+CustomDebugStringConvertible.swift"; sourceTree = "<group>"; };
+		BAE326BE9660D1D1CA770FF2B71FCBF2 /* DequeModule.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DequeModule.debug.xcconfig; sourceTree = "<group>"; };
+		BFBAD5291534FB041F3FB301DD41214A /* Deque+Testing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Testing.swift"; path = "Sources/DequeModule/Deque+Testing.swift"; sourceTree = "<group>"; };
+		C7B97670DE02FCEF1C27C613128758B6 /* Deque+CustomStringConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+CustomStringConvertible.swift"; path = "Sources/DequeModule/Deque+CustomStringConvertible.swift"; sourceTree = "<group>"; };
+		C9AE99D354A33F5E1B1BCC5407889B6D /* Pods-Helper-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Helper-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CB9B2F33B1A53453D02D5AA6E2C59950 /* DequeModule-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DequeModule-umbrella.h"; sourceTree = "<group>"; };
+		E4F2C21AF91A3BFE300DAEDE889047FC /* DequeModule-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DequeModule-dummy.m"; sourceTree = "<group>"; };
+		E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Carbon.framework; sourceTree = DEVELOPER_DIR; };
+		EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		EE37E25B42F3AD84E2A16CFB349AD8EB /* _DequeSlot.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = _DequeSlot.swift; path = Sources/DequeModule/_DequeSlot.swift; sourceTree = "<group>"; };
+		EEEC94A655335F2141B708C642CAD6A4 /* UnsafeMutableBufferPointer+Utilities.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UnsafeMutableBufferPointer+Utilities.swift"; path = "Sources/DequeModule/UnsafeMutableBufferPointer+Utilities.swift"; sourceTree = "<group>"; };
+		F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HotKey; path = HotKey.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F40166BC878E1772F7947E36BBFD22E1 /* DequeModule.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DequeModule.modulemap; sourceTree = "<group>"; };
+		F9DBC9B71EA36BA7DFB67271052B479C /* Deque+Codable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Deque+Codable.swift"; path = "Sources/DequeModule/Deque+Codable.swift"; sourceTree = "<group>"; };
+		FAD35528087253A27B53B4FECE6B868B /* Deque.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deque.swift; path = Sources/DequeModule/Deque.swift; sourceTree = "<group>"; };
+		FE9FAEFE1DF75B244994DFF29096F15A /* Deque._UnsafeHandle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deque._UnsafeHandle.swift; path = Sources/DequeModule/Deque._UnsafeHandle.swift; sourceTree = "<group>"; };
+		FF89417808EAC1FEE5EFE45C973F221C /* HotKey-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HotKey-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		862CE2925BAF4DC595485301607BE4B5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADDF2C327E338FE36D3E1A3BC1CF705A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0F76C6399C7F5C6832C06252640783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C588D399DF7C5CF7ED6B495E69F692 /* AppKit.framework in Frameworks */,
+				8DB1B75BF35671F8DCBCFFEE7BB0C1AE /* Carbon.framework in Frameworks */,
+				7DE7A644BDB044F2508790BECD629DE0 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC87A6049B9295B3EE4C5E5CFA981F39 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F08AB8AB63851A73C37B3FFF4479AE1 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1A8ACA7BDE3D4D19EEB039CC5AE133CB /* Pods-Helper */ = {
+			isa = PBXGroup;
+			children = (
+				2DC1A65D2CA2ED33460948770A9F4B42 /* Pods-Helper.modulemap */,
+				C9AE99D354A33F5E1B1BCC5407889B6D /* Pods-Helper-acknowledgements.markdown */,
+				8C08B10C19A57249A7EF28B27DB833CD /* Pods-Helper-acknowledgements.plist */,
+				B2445D95C396A63EA76C7F0C03ABF0E9 /* Pods-Helper-dummy.m */,
+				B3C5DB7DD78DB44EB9CCA310252D5938 /* Pods-Helper-frameworks.sh */,
+				1C50611070225985A6E0EE9C1CAC6640 /* Pods-Helper-Info.plist */,
+				32D880469158C5E1FBDC2FE0223872EE /* Pods-Helper-umbrella.h */,
+				A98A904FCEAF3AAF2345B0B050FFB621 /* Pods-Helper.debug.xcconfig */,
+				1C90B946B3063215B68185FDB3EA5C8E /* Pods-Helper.release.xcconfig */,
+			);
+			name = "Pods-Helper";
+			path = "Target Support Files/Pods-Helper";
+			sourceTree = "<group>";
+		};
+		1FD1C1779C10F15CAF8E4BB799ACECBF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F40166BC878E1772F7947E36BBFD22E1 /* DequeModule.modulemap */,
+				E4F2C21AF91A3BFE300DAEDE889047FC /* DequeModule-dummy.m */,
+				743C298F29144C5EB6ED37B119054244 /* DequeModule-Info.plist */,
+				1158D6D210D587695B3D70CDF563A1E2 /* DequeModule-prefix.pch */,
+				CB9B2F33B1A53453D02D5AA6E2C59950 /* DequeModule-umbrella.h */,
+				BAE326BE9660D1D1CA770FF2B71FCBF2 /* DequeModule.debug.xcconfig */,
+				56D7A5E836956D04EBA295957383DD64 /* DequeModule.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DequeModule";
+			sourceTree = "<group>";
+		};
+		223A6E82614509C4616324325ADACE98 /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1FF537C4B2333ED4B67B788F34AA128F /* AppKit.framework */,
+				E81F6492756EB97096F56436A1CE1548 /* Carbon.framework */,
+				EC06087B2939703A4EFECAD790F44320 /* Cocoa.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		52446BF92C8C1CF7F0674F314608E8AB /* HotKey */ = {
+			isa = PBXGroup;
+			children = (
+				21E0F6B8D44906AB9EA3B142B3814328 /* HotKey.swift */,
+				1A15A07FBDD3983A4B84A6DADEE5C76F /* HotKeysController.swift */,
+				60107FC329A76E362D1FFB4FF2ADA444 /* Key.swift */,
+				2395FB559879081A54C7E4F5B210C210 /* KeyCombo.swift */,
+				ACB71E5E5908A942053C9D455DDD9856 /* KeyCombo+System.swift */,
+				4E91D02F6A64AEB66D24B374EAA458FA /* NSEventModifierFlags+HotKey.swift */,
+				B836B86A3DBD581558FBF3017B2527FC /* Support Files */,
+			);
+			name = HotKey;
+			path = HotKey;
+			sourceTree = "<group>";
+		};
+		64B01695A393D4F6AD9B12C00447E181 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				97E708A95EA43E9A1682E007C662839B /* DequeModule */,
+				52446BF92C8C1CF7F0674F314608E8AB /* HotKey */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		92884343B1C7658808278B5AB9111402 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DC67414C47853C99D91A6F2339702DC /* DequeModule */,
+				F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */,
+				30DF8DBC825299B9A8A0CA768724880C /* Pods-Helper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97E708A95EA43E9A1682E007C662839B /* DequeModule */ = {
+			isa = PBXGroup;
+			children = (
+				0275E88AF8C17B144719ED4D8BB54F4E /* _DequeBuffer.swift */,
+				876A076DA514C0703D7F89DF6980832E /* _DequeBufferHeader.swift */,
+				EE37E25B42F3AD84E2A16CFB349AD8EB /* _DequeSlot.swift */,
+				A04540808C2DCA545D47E1B6FFF4A9D2 /* _UnsafeWrappedBuffer.swift */,
+				4F9CB65666159F7D2E0D909F8D5C8573 /* Compatibility.swift */,
+				FAD35528087253A27B53B4FECE6B868B /* Deque.swift */,
+				F9DBC9B71EA36BA7DFB67271052B479C /* Deque+Codable.swift */,
+				A4456599E9341C72059594F3D6560F59 /* Deque+Collection.swift */,
+				B4C7A801EF3EDDB750C58577D6A98FDE /* Deque+CustomDebugStringConvertible.swift */,
+				01D8067E3BA490F1DC7C2C61C21D42CA /* Deque+CustomReflectable.swift */,
+				C7B97670DE02FCEF1C27C613128758B6 /* Deque+CustomStringConvertible.swift */,
+				4D29938A529E50B2E026CDFE8DF0F9EF /* Deque+Equatable.swift */,
+				8B099A3CED11AE9FFFF7F55972644265 /* Deque+ExpressibleByArrayLiteral.swift */,
+				A73408AA2E15EDE63CACCE0B78A33BE8 /* Deque+Extras.swift */,
+				5524759BED5E8E16291E6ED5321BA1BF /* Deque+Hashable.swift */,
+				BFBAD5291534FB041F3FB301DD41214A /* Deque+Testing.swift */,
+				AC5E4039BD9D2B01D8A4BE233DFEC669 /* Deque._Storage.swift */,
+				FE9FAEFE1DF75B244994DFF29096F15A /* Deque._UnsafeHandle.swift */,
+				2FD60134A51B103D95EEC2F5450DE20F /* DequeModule.docc */,
+				EEEC94A655335F2141B708C642CAD6A4 /* UnsafeMutableBufferPointer+Utilities.swift */,
+				1FD1C1779C10F15CAF8E4BB799ACECBF /* Support Files */,
+			);
+			name = DequeModule;
+			path = DequeModule;
+			sourceTree = "<group>";
+		};
+		A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				223A6E82614509C4616324325ADACE98 /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B836B86A3DBD581558FBF3017B2527FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BBA1AC46A9FA24B548A663BB063A710 /* HotKey.modulemap */,
+				61D32C1D34DA3464B4F71E94A9DFAD15 /* HotKey-dummy.m */,
+				78C11218D77378387A6389016FCC0565 /* HotKey-Info.plist */,
+				57FB0985560B80B02B54AA4A54C9FF97 /* HotKey-prefix.pch */,
+				FF89417808EAC1FEE5EFE45C973F221C /* HotKey-umbrella.h */,
+				9EE8857A721A3FAA103342E283BD5F04 /* HotKey.debug.xcconfig */,
+				7F94458A7CCC9097223048BCBB838856 /* HotKey.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HotKey";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				A3CDB250FFEFB42CA2C68F1FBD92997D /* Frameworks */,
+				64B01695A393D4F6AD9B12C00447E181 /* Pods */,
+				92884343B1C7658808278B5AB9111402 /* Products */,
+				D3D27B296DB66A43E2163D0F82A1A991 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D3D27B296DB66A43E2163D0F82A1A991 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1A8ACA7BDE3D4D19EEB039CC5AE133CB /* Pods-Helper */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5229122CEC73947391FBBD18B3CCE97D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B8D30D6ED8EBE901B6B125B571CBE21D /* HotKey-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		73F7DBB472B9EA1C1CED17ACD30F1F3F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4DE070F0F40001DF064337F30ADF658 /* DequeModule-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F113D39EA7C4EFCF3C15D43125314087 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B87571960E297EE1519D2BCE5A752A96 /* Pods-Helper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1E330B86C4C1375C948FE5E8479F7D90 /* Pods-Helper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30A46C2D991F55A0C13842CCCD68C37B /* Build configuration list for PBXNativeTarget "Pods-Helper" */;
+			buildPhases = (
+				F113D39EA7C4EFCF3C15D43125314087 /* Headers */,
+				8A674BA1621F8D95CEA6340368CE81F3 /* Sources */,
+				862CE2925BAF4DC595485301607BE4B5 /* Frameworks */,
+				B1C7FDB6D2C16FBA237F0563BCC0CBEC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				742C43B154FFD4099F66A77F8856B7F1 /* PBXTargetDependency */,
+				9E97828A1AFE3101ACDEAFB14FD4DDFB /* PBXTargetDependency */,
+			);
+			name = "Pods-Helper";
+			productName = Pods_Helper;
+			productReference = 30DF8DBC825299B9A8A0CA768724880C /* Pods-Helper */;
+			productType = "com.apple.product-type.framework";
+		};
+		CE07C2F3ABE51E71FE07FF1DE53C5030 /* DequeModule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 51E96A728531BB42EC29EE1230E61CD4 /* Build configuration list for PBXNativeTarget "DequeModule" */;
+			buildPhases = (
+				73F7DBB472B9EA1C1CED17ACD30F1F3F /* Headers */,
+				24F37E0F6D72D924C9ACE5BDB6BD4EB1 /* Sources */,
+				EC87A6049B9295B3EE4C5E5CFA981F39 /* Frameworks */,
+				96F39DAA482910BF59B5EB9B64ECDDE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DequeModule;
+			productName = DequeModule;
+			productReference = 5DC67414C47853C99D91A6F2339702DC /* DequeModule */;
+			productType = "com.apple.product-type.framework";
+		};
+		DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB5AEC2BAAF899282A89A5C6C2838CD2 /* Build configuration list for PBXNativeTarget "HotKey" */;
+			buildPhases = (
+				5229122CEC73947391FBBD18B3CCE97D /* Headers */,
+				437F0EC752DA0BDC79B61DD39E5D9643 /* Sources */,
+				CA0F76C6399C7F5C6832C06252640783 /* Frameworks */,
+				EBC25B92AE2B8AD483032CBDC99747C0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HotKey;
+			productName = HotKey;
+			productReference = F36B2E7BB4C3E92E4DF7443FAFF3AE3F /* HotKey */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 92884343B1C7658808278B5AB9111402 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE07C2F3ABE51E71FE07FF1DE53C5030 /* DequeModule */,
+				DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */,
+				1E330B86C4C1375C948FE5E8479F7D90 /* Pods-Helper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		96F39DAA482910BF59B5EB9B64ECDDE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B1C7FDB6D2C16FBA237F0563BCC0CBEC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EBC25B92AE2B8AD483032CBDC99747C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		24F37E0F6D72D924C9ACE5BDB6BD4EB1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5143AF249AE80A9913639D8F4E81C408 /* _DequeBuffer.swift in Sources */,
+				71E4BD902A1109392C43A38F076105B9 /* _DequeBufferHeader.swift in Sources */,
+				1384363EFB949241A0473355CE0F30DE /* _DequeSlot.swift in Sources */,
+				0BDD0F7D8A3FA96A9B1E443A7F3F643A /* _UnsafeWrappedBuffer.swift in Sources */,
+				4A4CC0B26D24E8097D9A9F9AB03EB0EC /* Compatibility.swift in Sources */,
+				14818B5B862D53C4DD7B78DC8D91A63E /* Deque.swift in Sources */,
+				F054168A43FFC243ADDB1C3209F4747F /* Deque+Codable.swift in Sources */,
+				631C8D9C27B4B8D80C4AFB60298B533D /* Deque+Collection.swift in Sources */,
+				DC09E914168D9EDBBD25882C82613C8A /* Deque+CustomDebugStringConvertible.swift in Sources */,
+				D6ECE6FDC2393DA92343EE062A38638A /* Deque+CustomReflectable.swift in Sources */,
+				41802DA558C24B6884ED4A09EDFDC08C /* Deque+CustomStringConvertible.swift in Sources */,
+				7F32AE73A3816FE774036288C81B1866 /* Deque+Equatable.swift in Sources */,
+				C4079F5189051890CE3743482E03DECC /* Deque+ExpressibleByArrayLiteral.swift in Sources */,
+				ECA29ED2E2C10689EDD9FF3E68173FF9 /* Deque+Extras.swift in Sources */,
+				D5C477FEB8B0A3BFE77300E23E2FCCF6 /* Deque+Hashable.swift in Sources */,
+				21A5719304E3536B2A22C6CE0A30C983 /* Deque+Testing.swift in Sources */,
+				494DFD43467B5E4116E6B34AEC0EBFA1 /* Deque._Storage.swift in Sources */,
+				55DC15800A20058497693C02B6F45EBD /* Deque._UnsafeHandle.swift in Sources */,
+				11999D37F3F34038ECDC29999094F703 /* DequeModule.docc in Sources */,
+				8225E4A1869ECFE41D2C9A93A8CFA63B /* DequeModule-dummy.m in Sources */,
+				229C44124E34B78E141F0711D55FE424 /* UnsafeMutableBufferPointer+Utilities.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		437F0EC752DA0BDC79B61DD39E5D9643 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BD2F2F6790B1097BD9932DAD76532E43 /* HotKey.swift in Sources */,
+				4D75EB22F0E01020261266136F28F231 /* HotKey-dummy.m in Sources */,
+				793125C058F7C3E22A30A39AF80CF5E5 /* HotKeysController.swift in Sources */,
+				DC3C51DF7E16D0AED233A93CA0220290 /* Key.swift in Sources */,
+				E693C42A8D760AB0F139D18B50DEEFC4 /* KeyCombo.swift in Sources */,
+				D9D58C6A3D46C786319DF6026A2FD2A5 /* KeyCombo+System.swift in Sources */,
+				079C57B9DE25C63B3255AF60FBD2DC5E /* NSEventModifierFlags+HotKey.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8A674BA1621F8D95CEA6340368CE81F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54416E45059E6B88716CB7EF68C55F1A /* Pods-Helper-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		742C43B154FFD4099F66A77F8856B7F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DequeModule;
+			target = CE07C2F3ABE51E71FE07FF1DE53C5030 /* DequeModule */;
+			targetProxy = 2E6717E6BBF24099EBCA79A9CCE7BC9F /* PBXContainerItemProxy */;
+		};
+		9E97828A1AFE3101ACDEAFB14FD4DDFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HotKey;
+			target = DB4D977E4336D9F2E9E510A33CD1DB6D /* HotKey */;
+			targetProxy = 059BF6FCA435129F40F45A25EBF13805 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0765BD2E283B8094E375E867222291C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		36029D1CDF9B784B7F6DF5306F794F14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F94458A7CCC9097223048BCBB838856 /* HotKey.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/HotKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_MODULE_NAME = HotKey;
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		39F3B18B0C712BF9C382A97E0EA0C700 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.6.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5D84D4128D182602E5EE53A2268311D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C90B946B3063215B68185FDB3EA5C8E /* Pods-Helper.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Helper/Pods-Helper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.6.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-Helper/Pods-Helper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		94822143CA6BEBAA4849C3265FE7536F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9EE8857A721A3FAA103342E283BD5F04 /* HotKey.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HotKey/HotKey-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HotKey/HotKey-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MODULEMAP_FILE = "Target Support Files/HotKey/HotKey.modulemap";
+				PRODUCT_MODULE_NAME = HotKey;
+				PRODUCT_NAME = HotKey;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B489215A0A5CA350A6C80C2A760E3FB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BAE326BE9660D1D1CA770FF2B71FCBF2 /* DequeModule.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DequeModule/DequeModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DequeModule/DequeModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DequeModule/DequeModule.modulemap";
+				PRODUCT_MODULE_NAME = DequeModule;
+				PRODUCT_NAME = DequeModule;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B5876F022DB00E96D465E4FA1EB21EDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56D7A5E836956D04EBA295957383DD64 /* DequeModule.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DequeModule/DequeModule-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DequeModule/DequeModule-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MODULEMAP_FILE = "Target Support Files/DequeModule/DequeModule.modulemap";
+				PRODUCT_MODULE_NAME = DequeModule;
+				PRODUCT_NAME = DequeModule;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		D35F2FB4CDBDB5988AEBD525BA6A7E04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A98A904FCEAF3AAF2345B0B050FFB621 /* Pods-Helper.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Helper/Pods-Helper-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 13.6.0;
+				MODULEMAP_FILE = "Target Support Files/Pods-Helper/Pods-Helper.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30A46C2D991F55A0C13842CCCD68C37B /* Build configuration list for PBXNativeTarget "Pods-Helper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D35F2FB4CDBDB5988AEBD525BA6A7E04 /* Debug */,
+				5D84D4128D182602E5EE53A2268311D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0765BD2E283B8094E375E867222291C9 /* Debug */,
+				39F3B18B0C712BF9C382A97E0EA0C700 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		51E96A728531BB42EC29EE1230E61CD4 /* Build configuration list for PBXNativeTarget "DequeModule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B489215A0A5CA350A6C80C2A760E3FB6 /* Debug */,
+				B5876F022DB00E96D465E4FA1EB21EDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB5AEC2BAAF899282A89A5C6C2838CD2 /* Build configuration list for PBXNativeTarget "HotKey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				94822143CA6BEBAA4849C3265FE7536F /* Debug */,
+				36029D1CDF9B784B7F6DF5306F794F14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

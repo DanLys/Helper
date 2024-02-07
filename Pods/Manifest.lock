@@ -1,0 +1,20 @@
+PODS:
+  - DequeModule (1.0.4)
+  - HotKey (0.2.0)
+
+DEPENDENCIES:
+  - DequeModule
+  - HotKey
+
+SPEC REPOS:
+  trunk:
+    - DequeModule
+    - HotKey
+
+SPEC CHECKSUMS:
+  DequeModule: b3a4cb7a72901d2b182b5bf4721f42ba1e149cdf
+  HotKey: e96d8a2ddbf4591131e2bb3f54e69554d90cdca6
+
+PODFILE CHECKSUM: 32f1dc174255ab78746b7abbea558c9fdb8da528
+
+COCOAPODS: 1.14.2

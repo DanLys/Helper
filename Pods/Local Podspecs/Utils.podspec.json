@@ -1,0 +1,20 @@
+{
+  "name": "Utils",
+  "platforms": {
+    "ios": "14",
+    "osx": "14"
+  },
+  "version": "0.0.1-development",
+  "authors": {
+    "Danil": "lyskin-2013@mail.ru"
+  },
+  "summary": "Generated podspec by template",
+  "source": {
+    "source": "Sources"
+  },
+  "license": "MyLic",
+  "homepage": "MyPage",
+  "source_files": "Sources/**/*.{swift,h,m}",
+  "public_header_files": "Sources/**/*.{h,modulemap}",
+  "private_header_files": "Sources/**/YOSwiftHeader.h"
+}
